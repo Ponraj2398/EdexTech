@@ -16,7 +16,7 @@
     </q-header>
     <!-- <q-footer style="background-color: aqua;">
     </q-footer> -->
-    <q-drawer v-model="rightDrawerOpen" side="right" class="bg-white">
+    <q-drawer v-model="rightDrawerOpen" side="right" class="bg-white" overlay>
       <q-list>
         <q-item-label header>
           <q-input v-model="search" filled type="search" label="Search.." style="border: 1px solid white;color:black;">
