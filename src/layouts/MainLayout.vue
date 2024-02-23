@@ -5,7 +5,7 @@
         <q-btn flat dense round icon="menu" style="color:#000;" aria-label="Menu" @click="toggleRightDrawer" />
 
         <q-toolbar-title>
-          <strong><span style="color: rgb(235,49,51);">Edex</span> <span
+          <strong><span style="color: rgb(235,49,51);">Edex</span><span
               style="color: rgb(35,82,157);">Tech</span></strong>
         </q-toolbar-title>
         <div class="q-gutter-lg">
@@ -16,12 +16,12 @@
     </q-header>
     <!-- <q-footer style="background-color: aqua;">
     </q-footer> -->
-    <q-drawer v-model="rightDrawerOpen" side="right" bordered style="min-height: auto;background-color: antiquewhite;">
+    <q-drawer v-model="rightDrawerOpen" side="right" class="bg-white">
       <q-list>
         <q-item-label header>
-          <q-input v-model="search" filled type="search" label="Search..">
+          <q-input v-model="search" filled type="search" label="Search.." style="border: 1px solid white;color:black;">
             <template v-slot:append>
-              <q-icon name="search" style="margin-bottom: 25px;" />
+              <q-icon name="search" class="text-dark" style="margin-bottom: 25px;" />
             </template>
           </q-input>
         </q-item-label>
@@ -45,37 +45,37 @@ const linksList = [
     title: 'Home',
     // caption: 'quasar.dev',
     icon: 'home',
-    link: 'https://quasar.dev'
+    // link: 'https://quasar.dev'
   },
   {
     title: 'Career',
     // caption: 'github.com/quasarframework',
     icon: 'school',
-    link: 'https://github.com/quasarframework'
+    // link: 'https://github.com/quasarframework'
   },
   {
     title: 'About Us',
     // caption: 'chat.quasar.dev',
     icon: 'record_voice_over',
-    link: 'https://chat.quasar.dev'
+    // link: 'https://chat.quasar.dev'
   },
   {
     title: 'Contact',
     caption: '+91-8095570001',
     icon: 'phone',
-    link: 'https://forum.quasar.dev'
+    // link: 'https://forum.quasar.dev'
   },
   {
     title: 'FAQ',
     // caption: '@quasarframework',
     icon: 'help_center',
-    link: 'https://twitter.quasar.dev'
+    // link: 'https://twitter.quasar.dev'
   },
   {
     title: 'Facebook',
     caption: 'EdexTech',
     icon: 'facebook',
-    link: 'https://facebook.quasar.dev'
+    // link: 'https://facebook.quasar.dev'
   },
   // {
   //   title: 'Instagram',
